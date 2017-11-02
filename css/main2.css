@@ -1,0 +1,222 @@
+/****** BASE STYLES ******/
+@font-face {
+	font-family: StayRad;
+	src: url('../fonts/stayrad.ttf') format('truetype');
+}
+
+body {
+	font-family: 'Vollkorn', serif;
+}
+
+
+
+/****** GRID SYSTEM ******/
+.full-width {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.half-width {
+	float: left;
+	width: 50%;
+}
+
+
+
+/****** HEADER SECTION ******/
+header {
+	background: url(../img/photo5.jpg) no-repeat;
+	background-size: cover;
+	color: #fff;
+	height: 800px;
+	margin: 0 auto;
+}
+
+header h1 {
+	background: url(../img/oregonicon.png) no-repeat;
+	color: #000;
+	font-family: 'StayRad', serif;
+	font-size: 72px;
+	margin-top: 20px;
+	padding: 20px 20px 20px 30px;
+
+}
+
+header span {
+	color: #fff;
+	margin-left: 20px;
+}
+
+nav {
+	float: right;
+	margin-right: 50px;
+	margin-top: 70px;
+}
+
+nav li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul li a {
+	color: #ffffff;
+	font-size: 150%;
+	padding-left: 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	color: darkred;
+	text-decoration: none;
+}
+
+header p {
+	bottom: 20%;
+	font-size: 160%;
+	position: absolute;
+	right: 30%;
+}
+
+
+
+/****** ABOUT SECTION ******/
+#about {
+	height: 500px;
+}
+
+#about h2 {
+	font-size: 260%;
+	font-weight: 700;
+	margin-bottom: 80px;
+	margin-top: 100px;
+}
+
+#about span {
+	color: #615b27
+}
+
+#about p {
+	color: #353535;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 150%;
+	line-height: 35px;
+}
+
+#p-left {
+	padding-right: 60px;
+}
+
+#p-right {
+	padding-left: 60px;
+}
+
+
+/****** PORTFOLIO SECTION ******/
+#portfolio {
+	background: #a09d7d;
+	height: 800px;
+	padding-top: 40px;
+}
+
+#myCarousel {
+	background: #192C2F;
+	border: 5px solid #3b232d;
+	padding-bottom: 50px;
+}
+
+#myCarousel h4, #myCarousel p {
+	margin-left: 20px
+}
+
+#myCarousel p {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 100%;
+	padding-right: 40px;
+}
+
+.carousel-inner {
+	color: #fff;
+}
+
+.carousel-inner img {
+	margin: 10px auto;
+	max-height: 500px;
+}
+
+.tools {
+	display: inline-block;
+	float: left;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 100%;
+}
+
+
+/****** CONTACT SECTION ******/
+footer {
+	background: url(../img/photo8.jpg) center no-repeat;
+	color: #3b232d;
+	height: 800px;
+	text-align: center;
+}
+
+#contact {
+	margin-top: 50px;
+}
+
+#socialmedia, #contactform, #contact h1 {
+	background: lightgray;
+	border: 5px solid #3b232d;
+	margin: 50px auto;
+	max-width: 50%;
+	padding: 20px;
+}
+
+#contact h1 {
+	font-size: 200%;
+	margin-top: 0;
+	max-width: 200px;
+}
+
+#socialmedia {
+	margin-left: 60px;
+	max-height: 320px;
+	min-height: 320px;
+	text-align: center;
+}
+
+#socialmedia h2 {
+	font-size: 200%;
+	margin-bottom: 5%;
+	margin-top: 15%;
+}
+
+#socialmedia li {
+	list-style-type: none;
+	width: 80%;
+}
+
+#socialmedia a {
+	color: #3b232d;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 100%;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#socialmedia a:hover {
+	color: blue;
+	font-weight: 700;
+}
+
+#contactform {
+	margin-right: 60px;
+	max-height: 320px;
+	min-height: 320px;
+}
+
+footer img {
+	height: 20%;
+	margin-top: 120px;
+}
+
