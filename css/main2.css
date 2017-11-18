@@ -164,7 +164,7 @@ footer {
 	margin-top: 50px;
 }
 
-#socialmedia, #contactform, #contact h1 {
+#socialmedia, #contactform, #contact h1, #tempContact {
 	background: lightgray;
 	border: 5px solid #3b232d;
 	margin: 50px auto;
@@ -208,11 +208,24 @@ footer {
 	color: blue;
 	font-weight: 700;
 }
-
+/*
 #contactform {
 	margin-right: 60px;
 	max-height: 320px;
 	min-height: 320px;
+}*/
+
+#tempContact {
+	margin-right: 60px;
+	max-height: 320px;
+	min-height: 320px;
+	min-width: 200px;
+}
+
+#tempContact img {
+	margin: 0 auto;
+	max-height: 260px;
+	max-width: 85%;
 }
 
 footer img {
