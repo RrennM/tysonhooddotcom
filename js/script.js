@@ -1,7 +1,7 @@
 // Portfolio section funcitonality
 
 // Find items used for Portfolio thumbnails
-var buttons = document.getElementsByTagName("a");
+var buttons = document.getElementsByClassName("popup-link");
 var buttonsLength = buttons.length;
 
 // Use a for loop to find the id of each portfolio item

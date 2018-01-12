@@ -25,7 +25,7 @@ body {
 
 /****** HEADER SECTION ******/
 header {
-	background: url(../img/photo5.jpg) no-repeat;
+	background: url(../img/photo5.jpg) no-repeat center fixed;
 	background-size: cover;
 	color: #fff;
 	height: 800px;
@@ -104,6 +104,7 @@ header p {
 /****** ABOUT SECTION ******/
 #about {
 	height: 500px;
+	overflow: auto
 }
 
 #about h2 {
@@ -137,8 +138,17 @@ header p {
 #portfolio {
 	background: #a09d7d;
 	/*height: 900px;*/
-	padding: 40px 0;
+	padding: 20px 0;
 	overflow: auto
+}
+
+#portfolio .full-width {
+	text-align: center;
+}
+
+.portfolio #port-header {
+	margin: 0 auto;
+	background: red;
 }
 
 #portfolio .container {
@@ -147,10 +157,9 @@ header p {
 
 /* Popup container */
 .popup {
-    background: pink;
     cursor: pointer;
     display: inline-block;
-    margin: 20px 1%;
+    margin: 25px 1%;
     position: relative;
     text-align: center;
     width: 30%;
@@ -166,13 +175,13 @@ header p {
     left: 0;
     top: 0;
     right: 0;
-    overflow: scroll;
+    overflow: auto;
     position: fixed;
     margin: 2% auto;
     text-align: center;
     visibility: hidden;
     width: 95%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .thumbnail {
@@ -282,7 +291,7 @@ header p {
 
 /****** SERVICES SECTION ******/
 #services {
-	height: 600px;
+	height: 400px;
 	background: red;
 }
 
