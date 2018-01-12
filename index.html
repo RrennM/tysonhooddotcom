@@ -66,139 +66,315 @@
 			<!-- Portfolio Section -->
 			<section id="portfolio" name="portfolio">
 				<div class="full-width">
-					<div class="container">
-						<!-- not sure what to insert here yet...
-						May just make a thumbnail gallery for the meantime,
-						while I figure out horizantal slide shows -->
-						<div id="myCarousel" class="carousel slide" data-interval="7000" data-ride="carousel">
-						  <!-- Indicators -->
-						  <ol class="carousel-indicators">
-						    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						    <li data-target="#myCarousel" data-slide-to="1"></li>
-						    <li data-target="#myCarousel" data-slide-to="2"></li>
-						    <li data-target="#myCarousel" data-slide-to="3"></li>
-						  </ol>
+					<div class="container" id="port-first-row">
+						<!-- Insert the gallery style portfolio section here -->
+						<div class="popup">
+						  <a id="this0">
+						  	<img src="img/tysonhooddotcom.png" class="thumbnail">
+							  <div class="popuptext" id="myPopup0">
+							  	<div class="img-box">
+							  		<img src="img/code.png">
+							  		<img src="img/testing.png">
+							  	</div>
+							  	<div class="textbox">
+							  		<h1>JavaScript Practice</h1>
+							  		<div>
+							  		<h3>Tools used:</h3>
+								  		<ul class="tool-list">
+								  			<li>HTML5</li>
+								  			<li>CSS3</li>
+								  			<li>JavaScript</li>
+								  			<li>jQuery (kinda)</li>
+								  		</ul>
+								  		<ul class="tool-list">
+								  		</ul>
+							  		</div>
+							  		<h3>About the project</h3>
+							  		<p>So, I've been wanting to make something like this on my portfolio site for my portfolio section. Right now, I have this side scrolling image carousel, which is cool, but I didn't code it myself. I just interpreted it from Overstack and Bootstrap and made it suit my needs. It works alright, but I dunno.</p>
+							  		<p>I'm in the freelancing class portion of my SkillCrush starter code and it's telling me I need to make a services page. I'm not 100% sold on the idea because I have a single page, static site built right now and "adding a page" is kind of the anti-idea of having a single page site. So, while I need to add a section to that site for my services, I figured I would also rework the portfolio section to something more creative.</p>
+							  		<p>This isn't the final edition by any means. I have a feeling I may run into some issues when I go to style the "Click me" buttons* (keyword) by changing them into a/img's to show the projects. Until then, this will have to do and these pictures can show off the process. I like it. I hope to complete both sections by tomorrow, if not tonight.</p>
+							  		<p>Also, the reason jQuery is kind of used is because I figured out first through jQuery, the process of identifying which button was clicked. Then I reverse engineered it into JavaScript, so I'm not technically using jQuery.</p>
+							  	</div>
+							</div>
+							</a>
+						</div>
 
-						  <!-- Wrapper for slides -->
-						  <div class="carousel-inner" role="listbox">
-						  	<!-- item one -->
-						    <div class="item active">
-						      <img src="img/yelpcamp.png" alt="First Slide"/>
-						      <div class="container">
-						      	<div class="half-width">
-							      	<h4>YelpCamp</h4>
-							      	<p>This is the final project for a Udemy course called, "The Web Developer's Bootcamp" by Colt Steele.
-							      	This dynamic site has a login feature, blog, and uses MongoDB to for the database.</p>
-							      </div>
-							      <div class="half-width">
-							      	<h4>Tools Used: </h4>
-							      	<div class="half-width tools">
-							      		<ul>
-							      			<li>Javascript/JQuery</li>
-							      			<li>MongoDB</li>
-							      			<li>NodeJS/ExpressJS</li>
-							      		</ul>
-							      	</div>
-							      	<div class="half-width tools">
-							      		<ul>
-							      			<li>PassportJS</li>
-							      			<li>RESTful routes</li>
-							      			<li>Bootstrap</li>
-							      		</ul>
-							      	</div>
-							      </div>
-						      </div>
-					      </div>
-					      <!-- item two -->
-						    <div class="item">
-						      <img src="img/hoodachodotcom.png" alt="Second Slide"/>
-						      <div class="container">
-						      	<div class="half-width">
-							      	<h4>Hoodacho.com (<a href="www.hoodacho.com">Visit</a>)</h4>
-							      	<p>I built this website from the ground up. I used photoshop to style the images
-							      	 and illustrator to recreate the logo. When I learn ecommerce, I plan to go back and make it a standalone store.</p>
-							      </div>
-							      <div class="half-width">
-							      	<h4>Tools Used: </h4>
-							      	<div class="half-width tools">
-							      		<ul>
-							      			<li>Javascript/JQuery</li>
-							      			<li>Bootstrap</li>
-							      			<li>Photoshop/Illustrator</li>
-							      		</ul>
-							      	</div>
-							      </div>
-						      </div>
-					      </div>
-					      <!-- item three -->
-						    <div class="item">
-						      <img src="img/tysonhooddotcom.png" alt="Third Slide"/>
-						      <div class="container" id="last-slide">
-						      	<div class="half-width">
-							      	<h4>TysonHood.com</h4>
-							      	<p>The Skillcrush capstone project from their All Access Career Blueprint. I learned extensive design/planning 
-							      	and how to bring them to life by using Photoshop and front-end development. Includes a business card and 
-							      	logo design.
-							       </p>
-							      </div>
-							      <div class="half-width">
-							      	<h4>Tools Used: </h4>
-							      	<div class="half-width tools">
-							      		<ul>
-							      			<li>Javascript/JQuery</li>
-							      			<li>Bootstrap</li>
-							      			<li>Photoshop</li>
-							      		</ul>
-							      	</div>
-							      	<div class="half-width tools">
-							      		<ul>
-							      			<li>Illustrator</li>
-							      			<li>InDesign</li>
-							      		</ul>
-							      	</div>
-							      </div>
-						      </div>
-					      </div>
-					      <!-- item four -->
-						    <div class="item">
-						      <img src="img/purrfectmatch.png" alt="Fourth Slide"/>
-						      <div class="container">
-						      	<div class="half-width">
-							      	<h4>Purrfect Match</h4>
-							      	<p>Purrfect Match is a fully responsive, basic front-end developed website I learned to make through a
-							      	course through Udemy called, "The Web Developer's Bootcamp" by Colt Steele. </p>
-							      </div>
-							      <div class="half-width">
-							      	<h4>Tools Used: </h4>
-							      	<div class="half-width tools">
-							      		<ul>
-							      			<li>Javascript/JQuery</li>
-							      			<li>Bootstrap</li>
-							      			<li>Responsive Design</li>
-							      		</ul>
-							      	</div>
-							      </div>
-						      </div>
-					      </div>
-						  </div>
+						<div class="popup">
+						  <a id="this1">
+						  	<img src="img/hoodachodotcom.png" class="thumbnail">
+							  <div class="popuptext" id="myPopup1">
+							  	<div class="textbox">
+							  		<h1>Some other kinda crazy project!</h1>
+							  		<div>
+							  		<h3>Tools used:</h3>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+							  		</div>
+							  		<h3>About the project</h3>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  	</div>
+							</div>
+							</a>
+						</div>
 
-						  <!-- Controls -->
-						  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						    <span class="sr-only">Preview</span>
-						  </a>
-						  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						    <span class="sr-only">Preview</span>
-						  </a>
+						<div class="popup">
+						  <a id="this2">
+						  	<img src="img/purrfectmatch.png" class="thumbnail">
+							  <div class="popuptext" id="myPopup2">
+							  	<div class="img-box">
+							  		<img src="img/crys.jpg">
+							  		<img src="img/crys.jpg">
+							  	</div>
+							  	<div class="textbox">
+							  		<h1>Some other kinda crazy project!</h1>
+							  		<div>
+							  		<h3>Tools used:</h3>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+							  		</div>
+							  		<h3>About the project</h3>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  	</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="container" id="port-sec-row">
+						<div class="popup">
+						  <a id="this3">
+						  	<img src="img/testing02.png" class="thumbnail">
+							  <div class="popuptext" id="myPopup3">
+							  	<div class="img-box">
+							  		<img src="img/crys.jpg">
+							  		<img src="img/crys.jpg">
+							  	</div>
+							  	<div class="textbox">
+							  		<h1>Some other kinda crazy project!</h1>
+							  		<div>
+							  		<h3>Tools used:</h3>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+							  		</div>
+							  		<h3>About the project</h3>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  	</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="popup">
+						  <a id="this4">
+						  	<img src="img/yelpcamp.png" class="thumbnail">
+							  <div class="popuptext" id="myPopup4">
+							  	<div class="img-box">
+							  		<img src="img/crys.jpg">
+							  		<img src="img/crys.jpg">
+							  	</div>
+							  	<div class="textbox">
+							  		<h1>Some other kinda crazy project!</h1>
+							  		<div>
+							  		<h3>Tools used:</h3>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+							  		</div>
+							  		<h3>About the project</h3>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  	</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="popup">
+						  <a id="this5">
+						  	<img src="img/campaignmap.png" class="thumbnail">
+							  <div class="popuptext" id="myPopup5">
+							  	<div class="img-box">
+							  		<img src="img/crys.jpg">
+							  		<img src="img/crys.jpg">
+							  	</div>
+							  	<div class="textbox">
+							  		<h1>Some other kinda crazy project!</h1>
+							  		<div>
+							  		<h3>Tools used:</h3>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+							  		</div>
+							  		<h3>About the project</h3>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  	</div>
+								</div>
+							</a>
 						</div>
 					</div>	
+					
+
+					<div class="container" id="port-thi-row">
+						<div class="popup">
+						  <a id="this6">
+						  	<img src="img/roguepickings.png" class="thumbnail">
+							  <div class="popuptext" id="myPopup6">
+							  	<div class="img-box">
+							  		<img src="img/crys.jpg">
+							  		<img src="img/crys.jpg">
+							  	</div>
+							  	<div class="textbox">
+							  		<h1>Some other kinda crazy project!</h1>
+							  		<div>
+							  		<h3>Tools used:</h3>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+							  		</div>
+							  		<h3>About the project</h3>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  	</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="popup">
+						  <a id="this7">
+						  	<img src="img/lolcatclock.png" class="thumbnail">
+							  <div class="popuptext" id="myPopup7">
+							  	<div class="img-box">
+							  		<img src="img/crys.jpg">
+							  		<img src="img/crys.jpg">
+							  	</div>
+							  	<div class="textbox">
+							  		<h1>Some other kinda crazy project!</h1>
+							  		<div>
+							  		<h3>Tools used:</h3>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+							  		</div>
+							  		<h3>About the project</h3>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  	</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="popup">
+						  <a id="this8">
+						  	<img src="img/magiceightball.png" class="thumbnail">
+							  <div class="popuptext" id="myPopup8">
+							  	<div class="img-box">
+							  		<img src="img/crys.jpg">
+							  		<img src="img/crys.jpg">
+							  	</div>
+							  	<div class="textbox">
+							  		<h1>Some other kinda crazy project!</h1>
+							  		<div>
+							  		<h3>Tools used:</h3>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+								  		<ul class="tool-list">
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  			<li>List Item</li>
+								  		</ul>
+							  		</div>
+							  		<h3>About the project</h3>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  		<p>Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+							  	</div>
+								</div>
+							</a>
+						</div>
+					</div>	
+
 				</div>
 			</section>
 
 			<!-- Services Section -->
-			<section>
-				
+			<section id="services" name="services">
+				<div class="full-width">
+					<div class="container">
+						
+					</div>
+				</div>
 			</section> <!-- End Services Section -->
 		</main>
 
@@ -249,5 +425,6 @@
 		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		  crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
