@@ -159,7 +159,7 @@ header p {
 .popup {
     cursor: pointer;
     display: inline-block;
-    margin: 25px 1%;
+    margin: 25px 1% 25px;
     position: relative;
     text-align: center;
     width: 30%;
@@ -168,7 +168,7 @@ header p {
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
-    background-color: #4d6;
+    background-color: #3B232D;
     border-radius: 3px;
     color: #fff;
     bottom: 0;
@@ -272,29 +272,12 @@ header p {
     line-height: 1.6;
 }
 
-/*end right side of popup*/
-
-
-/*individual popup features*/
-#myPopup0 {
-    background-color: seagreen;
-}
-
-#myPopup1 {
-    background-color: lightblue;
-}
-
-#myPopup2 {
-    background-color: indianred;
-}
-/*end individual popup features*/
-
 
 
 /****** SERVICES SECTION ******/
 #services {
-	height: 400px;
-	background: #2F5732;
+	height: 500px;
+	background: #263B40;
 }
 
 
