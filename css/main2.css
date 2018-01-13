@@ -137,7 +137,6 @@ header p {
 /****** PORTFOLIO SECTION ******/
 #portfolio {
 	background: #a09d7d;
-	/*height: 900px;*/
 	padding: 20px 0;
 	overflow: auto
 }
@@ -216,12 +215,12 @@ header p {
     width: 45%;
     float: left;
     padding: 1%;
-    max-height: 48.5%;
 }
 .popup .popuptext img {
     max-width: 100%;
-    margin: 1% auto;
-    max-height: 49%;
+    margin: 1em auto;
+    max-height: 500px;
+    height: auto;
 }
 
 /*end left side of popup*/
@@ -234,6 +233,7 @@ header p {
     height: 90%;
     margin-left: 2em;
     text-align: left;
+    display: block;
 }
 
 .popup .popuptext .textbox h1 {
@@ -256,7 +256,7 @@ header p {
 .popup .popuptext .textbox h3 {
     clear: both;
     text-align: left;
-    margin: 2em 0;
+    margin: 1em 0;
     font-weight: 700;
 }
 
@@ -276,8 +276,76 @@ header p {
 
 /****** SERVICES SECTION ******/
 #services {
-	height: 500px;
 	background: #263B40;
+	height: 450px;
+	overflow: auto;
+	padding: 20px 0;
+}
+
+#services .container {
+	width: 100%;
+}
+
+/*Left side of popup*/
+.popup.services-popup .popuptext .img-box {
+    width: 45%;
+    float: left;
+    padding: 1%;
+}
+.popup.services-popup .popuptext img {
+    max-width: 100%;
+    margin: 1% auto;
+    max-height: 200px;
+    height: auto;
+    padding: 0 10%;
+}
+
+/*end left side of popup*/
+
+
+/*right side of popup*/
+.popup.services-popup .popuptext .textbox {
+    width: 45%;
+    float: left;
+    height: 90%;
+    margin-left: 2em;
+    text-align: left;
+}
+
+.popup.services-popup .popuptext .textbox h1 {
+    margin: 2em 0;
+    font-weight: 700;
+}
+
+.popup.services-popup .popuptext .tool-list {
+    float: left;
+    width: 40%;
+    margin: 0 0 20px;
+}
+
+.popup.services-popup .popuptext .textbox ul li {
+    text-align: left;
+    list-style: none;
+    line-height: 2em;
+}
+
+.popup.services-popup .popuptext .textbox h3 {
+    clear: both;
+    text-align: left;
+    margin: 2em 0;
+    font-weight: 700;
+}
+
+.popup.services-popup .popuptext .textbox h3:first-of-type {
+    clear: both;
+    text-align: left;
+    margin: 1em 0;
+}
+
+.popup.services-popup .popuptext .textbox p {
+    text-align: left;
+    margin: 0 2em 1em; 
+    line-height: 1.6;
 }
 
 
