@@ -232,11 +232,13 @@ header p {
     width: 45%;
     float: left;
     height: 90%;
+    margin-left: 2em;
     text-align: left;
 }
 
 .popup .popuptext .textbox h1 {
-    margin: 2em 1em;
+    margin: 2em 0;
+    font-weight: 700;
 }
 
 .popup .popuptext .tool-list {
@@ -254,14 +256,14 @@ header p {
 .popup .popuptext .textbox h3 {
     clear: both;
     text-align: left;
-    margin: 2em 2em;
+    margin: 2em 0;
     font-weight: 700;
 }
 
 .popup .popuptext .textbox h3:first-of-type {
     clear: both;
     text-align: left;
-    margin: 1em 2em;
+    margin: 1em 0;
 }
 
 .popup .popuptext .textbox p {
@@ -292,7 +294,7 @@ header p {
 /****** SERVICES SECTION ******/
 #services {
 	height: 400px;
-	background: red;
+	background: #4D8F53;
 }
 
 
