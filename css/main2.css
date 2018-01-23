@@ -38,11 +38,11 @@ header .full-width {
 }
 
 header .one {
-	width: 40%;
+	width: 35%;
 }
 
 header .two {
-	width: 59%;
+	width: 64.5%;
 }
 
 header h1 {
@@ -73,7 +73,7 @@ nav li {
 
 nav ul li a {
 	color: #ffffff;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	padding-left: 30px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -214,7 +214,7 @@ header p {
 .popup .popuptext .img-box {
     width: 45%;
     float: left;
-    padding: 1%;
+    padding: 1% 2%;
 }
 .popup .popuptext img {
     max-width: 100%;
@@ -234,6 +234,7 @@ header p {
     margin-left: 2em;
     text-align: left;
     display: block;
+    padding-right: 2em;
 }
 
 .popup .popuptext .textbox h1 {
@@ -277,7 +278,7 @@ header p {
 /****** SERVICES SECTION ******/
 #services {
 	background: #263B40;
-	height: 450px;
+	height: auto;
 	overflow: auto;
 	padding: 20px 0;
 }
@@ -309,6 +310,7 @@ header p {
     float: left;
     height: 90%;
     margin-left: 2em;
+    padding: 0 1em;
     text-align: left;
 }
 
@@ -454,13 +456,26 @@ These override the primary Desktop styles.
 			height: 150px;
 		}
 
+		header .full-width .one {
+			width: 30%;
+		}
+
+		header .full-width .two {
+			width: 69%;
+		}
+
+		header h1 {
+			font-size: 48px;
+			background-size: contain;
+		}
+
 		/****** NAV ******/
 		nav {
 			margin-right: 30px;
 		}
 
 			nav ul li a {
-				font-size: 1.3em;
+				font-size: 1em;
 			}
 
 	/****** Hero Msg ******/
@@ -500,17 +515,14 @@ These override the primary Desktop styles.
 
 	/****** PORTFOLIO SECTION ******/
 	#portfolio {
-		height: 750px;
+		height: auto;
+
 	}
 
 		#portfolio .container {
+			height: auto;
 			width: 100%;
-			height: 700px;
 		}
-
-			#myCarousel {
-				height: 650px;
-			}
 
 
 	/****** CONTACT SECTION ******/
@@ -553,12 +565,13 @@ These override the primary Desktop styles.
 			height: 450px;
 		}
 
-		header .half-width {
+		header .half-width, header .full-width .one, header .full-width .two {
 			background-color: rgba(0, 0, 0, 0.5);
 			width: 100%
 		}
 
 			header h1 {
+				font-size: 72px;
 				margin: 20px auto 30px auto;
 				width: 300px;
 			}
@@ -584,7 +597,7 @@ These override the primary Desktop styles.
 					width: 60%;
 				}
 
-				nav li:nth-child(3) {
+				nav li:nth-child(4) {
 					border-bottom: none;
 				}
 
@@ -609,8 +622,9 @@ These override the primary Desktop styles.
 
 	/****** ABOUT SECTION ******/
 	#about {
-		height: 900px;
+		height: auto;
 		text-align: center;
+		padding: 40px 0; 
 	}
 
 	#about .half-width {
@@ -641,34 +655,29 @@ These override the primary Desktop styles.
 
 	/****** PORTFOLIO SECTION ******/
 	#portfolio {
-		height: 750px;
+		height: auto;
 	}
 
-		#porfolio .full-width {
+		#porfolio .full-width,
+		#portfolio .container,
+		#portfolio .popup,
+		#portfolio .popup .popuptext .img-box,
+		#portfolio .popup .popuptext .textbox {
 			width: 100%;
-
 		}
 
-		#portfolio .container {
+	/****** SERVICES SECTION ******/
+
+	#services {
+		height: auto;
+	}
+		#services .popup,
+		#services .popup .popuptext .img-box,
+		#services .popup .popuptext .textbox {
 			width: 100%;
-			height: 700px;
 		}
 
-			#myCarousel {
-				height: 650px;
-			}
 
-				#myCarousel p, #myCarousel li {
-					font-size: .875em;
-				}
-
-				.carousel-inner .half-width {
-					width: 100%;
-				}
-
-				.carousel-inner .half-width .tools{
-					/*width: 50%;*/
-				}
 
 
 	/****** CONTACT SECTION ******/
